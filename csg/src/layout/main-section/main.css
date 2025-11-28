@@ -1,5 +1,4 @@
 .hero-container {
-  min-height: 80vh;
   display: flex;
   align-items: center;
   padding: 2rem 1rem;
@@ -37,10 +36,9 @@
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .hero-container {
-    min-height: auto;
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   .hero-layout {

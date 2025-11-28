@@ -6,6 +6,7 @@ type buttonProps = {
   children: React.ReactNode;
   onClick?: () => void;
   style?: React.CSSProperties;
+  disabled?: boolean;
 };
 export default function Button({
   variant,
@@ -13,6 +14,7 @@ export default function Button({
   children,
   onClick,
   style,
+  disabled,
 }: buttonProps) {
   return (
     <button
@@ -21,6 +23,7 @@ export default function Button({
       type='submit'
       className={`button ${variant}`}
       style={style}
+      disabled={disabled}
     >
       {children}
     </button>
