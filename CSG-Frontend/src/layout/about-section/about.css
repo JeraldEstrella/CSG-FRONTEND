@@ -1,0 +1,76 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text-layout {
+  text-align: center;
+}
+
+.about-content {
+  display: grid;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  margin: 2rem auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-content-image img {
+  border-radius: 12px;
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about-title h1 {
+  font-size: 52px;
+  line-height: 4rem;
+}
+
+.about-content-text h1 {
+  margin: 0;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+
+  .about-title h1 {
+    font-size: 36px; /* Adjust title size */
+    line-height: 3rem;
+  }
+
+  .about-content-text h1 {
+    font-size: 20px; /* Adjust text size */
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title h1 {
+    font-size: 28px; /* Further adjust title size */
+    line-height: 2.5rem;
+  }
+
+  .about-content-text h1 {
+    font-size: 18px; /* Further adjust text size */
+    line-height: 1.8rem;
+  }
+}
