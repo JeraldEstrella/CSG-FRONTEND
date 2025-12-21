@@ -1,0 +1,48 @@
+.dropdown-container {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 0;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-header h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #1a1a1a;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.dropdown-header:hover h3 {
+  color: #2563eb;
+}
+
+.dropdown-list {
+  margin-top: 12px;
+  padding-left: 0;
+  list-style: none;
+  line-height: 2.4;
+}
+
+.dropdown-item {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* Simple animation for the arrow */
+.icon {
+  transition: transform 0.3s ease;
+  color: #2563eb;
+}
+
+.icon.rotated {
+  transform: rotate(180deg);
+}
